@@ -1,4 +1,4 @@
-name: mpxv-qc
+name: rsv-a-qc
 channels:
   - conda-forge
   - bioconda
