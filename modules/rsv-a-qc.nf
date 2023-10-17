@@ -198,7 +198,7 @@ process snpeff {
 
   script:
   """
-  snpEff -noLog -hgvs1LetterAa NC_038235.1  ${variants} > ${sample_id}.ann.vcf
+  snpEff -noLog -hgvs1LetterAa NC_001781.1  ${variants} > ${sample_id}.ann.vcf
   """
 }
 
