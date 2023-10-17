@@ -68,7 +68,7 @@ plot_tree_with_snps <- function(tree, alleles, lineage_path)
           as.is=TRUE,
           quote="\"")
 
-      lineage <- lineage[c("seqName", "lineage")]
+      lineage <- lineage[c("seqName", "clade")]
       colnames(lineage) <- c("name", "lineage")
       lineage$name <- factor(lineage$name, levels=tip.order)
       lineage$pos <- 1
