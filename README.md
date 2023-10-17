@@ -1,6 +1,6 @@
 # rsv-a-qc
 
-A companion pipeline to [BCCDC-PHL/rsv-a-artic-nf](https://github.com/BCCDC-PHL/rsv-a-artic-nf) for quality-control analysis.
+A companion pipeline to [BCCDC-PHL/rsv-b-artic-nf](https://github.com/BCCDC-PHL/rsv-a-artic-nf) for quality-control analysis.
 This pipeline is a modified version of [BCCDC-PHL/mpxv-artic-nf](https://github.com/BCCDC-PHL/mpxv-artic-nf), which was based directly on [jts/ncov-tools](https://github.com/jts/ncov-tools), with some adjustments made for monkeypox virus analysis.
 
 ```mermaid
@@ -46,10 +46,10 @@ write_qc_summary --> summary_qc.tsv
 ```
 
 ## Usage
-This pipeline makes some assumptions about the directory structure of the input dataset. We assume that there is a directory below the directory passed via the `--run_dir` flag, named like: `rsv-a-artic-nf-vX.Y-output`, which contains output from the [BCCDC-PHL/rsv-a-artic-nf](https://github.com/BCCDC-PHL/rsv-a-artic-nf) pipeline.
+This pipeline makes some assumptions about the directory structure of the input dataset. We assume that there is a directory below the directory passed via the `--run_dir` flag, named like: `rsv-b-artic-nf-vX.Y-output`, which contains output from the [BCCDC-PHL/rsv-b-artic-nf](https://github.com/BCCDC-PHL/rsv-b-artic-nf) pipeline.
 
 ```
-nextflow run BCCDC-PHL/rsv-a-qc \
+nextflow run BCCDC-PHL/rsv-b-qc \
   -profile conda \
   --cache ~/.conda/envs \
   --run_dir </path/to/run_dir> \

@@ -1,4 +1,4 @@
-name: rsv-a-qc
+name: rsv-b-qc
 channels:
   - conda-forge
   - bioconda
