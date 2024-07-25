@@ -95,7 +95,8 @@ process nextclade {
   nextclade_version=\$(nextclade --version | awk '{print \$2}')
 
   append_nextclade_version.py --nextclade_tsv ${run_id}_nextclade_qc.tsv --out ${run_id}_nextclade_qc_with_dataset.tsv --nextclade_version \${nextclade_version} --dataset_version \${dataset_version}
-
+  
+  mv ${run_id}_nextclade_qc_with_dataset.tsv ${run_id}_nextclade_qc.tsv
 
   """
 }
