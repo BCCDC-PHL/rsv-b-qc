@@ -48,7 +48,6 @@ workflow {
   
   ch_resistance_mutations = Channel.fromPath(params.resistance_mutations)
 
-  ch_ref_alleles = Channel.fromPath(params.ref_alleles)
 
 
   main:
@@ -61,7 +60,7 @@ workflow {
 
     nextclade(prepare_multi_fasta.out.join(nextclade_dataset.out.dataset))
 
-    detect_resistance_mutations(nextclade.out.qc.join(ch_resistance_mutations).join(ch_ref_alleles)))
+    detect_resistance_mutations(nextclade.out.fcds.combine(ch_resistance_mutations))
 
     augur_align(prepare_multi_fasta.out.join(nextclade_dataset.out.ref))
 
