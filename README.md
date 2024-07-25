@@ -1,4 +1,4 @@
-# rsv-a-qc
+# rsv-b-qc
 
 A companion pipeline to [BCCDC-PHL/rsv-b-artic-nf](https://github.com/BCCDC-PHL/rsv-a-artic-nf) for quality-control analysis.
 This pipeline is a modified version of [BCCDC-PHL/mpxv-artic-nf](https://github.com/BCCDC-PHL/mpxv-artic-nf), which was based directly on [jts/ncov-tools](https://github.com/jts/ncov-tools), with some adjustments made for monkeypox virus analysis.
